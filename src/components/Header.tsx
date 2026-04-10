@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, HandHeart, ShieldCheck, Heart } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "What We Do", to: "/what-we-do" },
-  { label: "Privacy & Values", to: "/privacy" },
-  { label: "Donate", to: "/donate" },
+  { label: "Home", to: "/", icon: Home },
+  { label: "What We Do", to: "/what-we-do", icon: HandHeart },
+  { label: "Privacy & Values", to: "/privacy", icon: ShieldCheck },
+  { label: "Donate", to: "/donate", icon: Heart },
 ];
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
           <img
             src="https://res.cloudinary.com/dqiywiqk0/image/upload/v1775810984/logo_insugo.png"
             alt="RECORD Uganda Logo"
-            className="h-14 w-14 object-contain rounded-full"
+            className="h-14 w-14 object-contain"
           />
           <div className="hidden sm:block">
             <p className="font-heading text-sm font-bold text-foreground leading-tight">RECORD</p>
@@ -33,19 +33,23 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === link.to
-                  ? "bg-primary text-primary-foreground"
-                  : "text-foreground hover:bg-accent"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1.5 ${
+                  location.pathname === link.to
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-accent"
+                }`}
+              >
+                <Icon size={16} />
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Flag + Uganda */}
@@ -79,20 +83,24 @@ const Header = () => {
             />
             <span className="font-heading text-sm font-bold">UGANDA</span>
           </div>
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              onClick={() => setMobileOpen(false)}
-              className={`block px-4 py-3 text-sm font-medium transition-colors ${
-                location.pathname === link.to
-                  ? "bg-primary text-primary-foreground"
-                  : "text-foreground hover:bg-accent"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMobileOpen(false)}
+                className={`flex items-center gap-2 px-4 py-3 text-sm font-medium transition-colors ${
+                  location.pathname === link.to
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-accent"
+                }`}
+              >
+                <Icon size={16} />
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </header>
