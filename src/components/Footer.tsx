@@ -83,6 +83,19 @@ const Footer = () => {
           <p className="text-xs text-gold-light/40">
             Building resilience, transforming communities.
           </p>
+          <a
+            href="https://www.mahanitech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-[10px] text-gold-light/30 hover:text-gold-light/50 transition-colors"
+          >
+            <img
+              src="https://res.cloudinary.com/dqiywiqk0/image/upload/v1775815193/mahani-icon_iat7zj.png"
+              alt="Mahani Tech"
+              className="h-3.5 w-3.5"
+            />
+            Developed by Mahani Tech
+          </a>
         </div>
       </div>
     </footer>
