@@ -14,7 +14,7 @@ const Footer = () => {
                 <img
                   src="https://res.cloudinary.com/dqiywiqk0/image/upload/v1775810984/logo_insugo.png"
                   alt="RECORD Logo"
-                  className="h-12 w-12 rounded-full"
+                  className="h-12 w-12"
                 />
                 <div>
                   <p className="font-heading text-gold font-bold text-lg">RECORD</p>
