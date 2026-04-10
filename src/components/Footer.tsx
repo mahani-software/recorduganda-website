@@ -14,12 +14,9 @@ const Footer = () => {
                 <img
                   src="https://res.cloudinary.com/dqiywiqk0/image/upload/v1775810984/logo_insugo.png"
                   alt="RECORD Logo"
-                  className="h-12 w-12"
+                  className="h-20 w-20"
                 />
-                <div>
-                  <p className="font-heading text-gold font-bold text-lg">RECORD</p>
-                  <p className="text-sm text-gold-light/70">Uganda</p>
-                </div>
+                <p className="font-heading text-gold font-bold text-2xl">Uganda</p>
               </div>
               <p className="text-sm text-gold-light/60 leading-relaxed">
                 Refugee Community for Resilience & Development — building capacity and competence to positively change lives in Kamwenge District.
