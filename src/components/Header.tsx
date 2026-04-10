@@ -23,12 +23,9 @@ const Header = () => {
             alt="RECORD Uganda Logo"
             className="h-14 w-14 object-contain"
           />
-          <div className="hidden sm:block">
-            <p className="font-heading text-sm font-bold text-foreground leading-tight">RECORD</p>
-            <p className="text-xs text-muted-foreground leading-tight max-w-[180px]">
-              Refugee Community for Resilience & Development
-            </p>
-          </div>
+          <p className="hidden sm:block font-heading text-sm font-bold text-foreground leading-tight max-w-[220px]">
+            Refugee Community for Resilience & Development
+          </p>
         </Link>
 
         {/* Desktop Nav */}
