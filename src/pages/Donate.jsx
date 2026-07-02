@@ -91,8 +91,10 @@ const Donate = () => {
               To donate, please contact RECORD directly via email or phone. We will guide you through the process of making your contribution.
             </p>
             <div className="space-y-3 text-sm text-muted-foreground mb-8">
-              <p>📧 info@recorduganda.org</p>
-              <p>📞 +256 XXX XXX XXX</p>
+              <p>✉️ <b>refugeecom19@gmail.com</b> </p>
+              <p>✉️ busingexpa85@gmail.com</p>
+              <p>📞 +256 774 634 532</p>
+              <p>📮 P. O. Box 750150</p>
               <p>📍 Nkoma Katalyeba, Kamwenge District</p>
             </div>
             <Link

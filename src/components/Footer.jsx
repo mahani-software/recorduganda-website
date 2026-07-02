@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, MapPin, Phone } from "lucide-react";
+import { Heart, Mail, MapPin, Phone, Box } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -54,11 +54,15 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={16} className="text-gold shrink-0" />
-                  <span>info@recorduganda.org</span>
+                  <span>refugeecom19@gmail.com, busingexpa85@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={16} className="text-gold shrink-0" />
-                  <span>+256 XXX XXX XXX</span>
+                  <span>+256 774 634 532</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Box size={16} className="text-gold shrink-0" />
+                  <span>P. O. Box 750150</span>
                 </div>
               </div>
 
